@@ -1,4 +1,8 @@
-# Marlin for Sapphire Pro with 4 x TMC2209 (UART), HE1 fan and optical endstop on Z axis
+# Marlin for Sapphire Pro
+
+# With 4 x TMC2209 (UART), auto off heat sink fan and optical endstop on Z axis
+
+A few pictures of the hardware side
 
 ![Wiring](https://www.thingiverse.com/thing:4344191)
 
@@ -8,22 +12,22 @@ __Not for production use. Use with caution!__
 
 ## Files adapted to Sapphire Pro with TMC2209 (UART)
 
-pins_MKS_ROBIN_NANO.h
-HAL_LCD_class_defines.h
-u8g_dev_tft_480x320_upscale_from_128x64.cpp
-Conditionals_LCD.h
-ultralcd_DOGM.h
-sdio.h
-Configuration.h
-Configuration_adv.h
+* pins_MKS_ROBIN_NANO.h
+* HAL_LCD_class_defines.h
+* u8g_dev_tft_480x320_upscale_from_128x64.cpp
+* Conditionals_LCD.h
+* ultralcd_DOGM.h
+* sdio.h
+* Configuration.h
+* Configuration_adv.h
 
 Most parts of the changes were copied from https://github.com/porlock/SapphireProMarlin2.0stable
 
 ## Sapphire Pro modifications
-4 x TMC2209 with UART wires to stepper E1 pins and thermocouples pin
-Hotend heat sink fan on HE1 connector (turns off at 50°C)
-Optical endstop on Z axis
-E3D V6 hotend with sock
+* 4 x TMC2209 with UART wires to stepper E1 pins and thermocouples pin
+* Hotend heat sink fan on HE1 connector (turns off below 50°C)
+* Optical endstop on Z axis
+* E3D V6 hotend with sock
 
 See the location of the pins here https://github.com/makerbase-mks/MKS-Robin-Nano/blob/master/hardware/MKS%20Robin%20Nano%20V1.2_004/MKS%20Robin%20Nano%20V1.2_004%20PIN.pdf
 
