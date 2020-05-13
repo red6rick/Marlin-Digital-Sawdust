@@ -2,11 +2,12 @@
 
 ## With 4 x TMC2209 (UART), auto off heat sink fan and optical endstop on Z axis
 
+* Uses the most recent bugfixes and features of Marlin (branch bugfix-2.0.x) - use at your own risk
 * Linear Advance is enabled but K value is set to 0 (= optional, set it via gcode M900)
 * Connector for the second hotend is used as fan output for the heatsink fan on the hotend. Turns off below 50°C
 * Expects an optical endstop on the Z axis (Z min endstop)
 
-A few pictures of the hardware side
+A few pictures of the hardware side (UART)
 
 https://www.thingiverse.com/thing:4344191
 
