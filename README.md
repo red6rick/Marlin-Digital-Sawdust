@@ -1,6 +1,6 @@
 # Marlin for Sapphire Pro
 
-# With 4 x TMC2209 (UART), auto off heat sink fan and optical endstop on Z axis
+## With 4 x TMC2209 (UART), auto off heat sink fan and optical endstop on Z axis
 
 A few pictures of the hardware side
 
