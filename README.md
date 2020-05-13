@@ -4,7 +4,7 @@
 
 A few pictures of the hardware side
 
-![Wiring](https://www.thingiverse.com/thing:4344191)
+https://www.thingiverse.com/thing:4344191
 
 ## Marlin 2.0 Bugfix Branch
 
