@@ -6,6 +6,8 @@
 * Linear Advance is enabled but K value is set to 0 (= optional, set it via gcode M900)
 * Connector for the second hotend is used as fan output for the heatsink fan on the hotend. Turns off below 50°C
 * Expects an optical endstop on the Z axis (Z min endstop)
+* Filament runout sensor is enabled
+* Abort print when endstop is hit (optional via gcode)
 
 A few pictures of the hardware side (UART)
 
