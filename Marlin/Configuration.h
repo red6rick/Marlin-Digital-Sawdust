@@ -507,10 +507,6 @@
   //#define DEFAULT_Ki 2.25
   //#define DEFAULT_Kd 440
 
-
-
-
-
 // E3D V6 230°C with fan 17% and sock 
 #define DEFAULT_Kp 16.30
 #define DEFAULT_Ki 0.90
