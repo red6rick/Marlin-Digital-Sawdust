@@ -2310,7 +2310,7 @@
    * When disabled, Marlin will use spreadCycle stepping mode.
    */
   //#define STEALTHCHOP_XY
-  #define STEALTHCHOP_Z
+  //#define STEALTHCHOP_Z
   //#define STEALTHCHOP_E
 
   /**
@@ -2346,6 +2346,7 @@
     #define CURRENT_STEP_DOWN     50  // [mA]
     #define REPORT_CURRENT_CHANGE
     #define STOP_ON_ERROR
+    #define MONITOR_DRIVER_STATUS_INTERVAL_MS 2500u // default: 500u (tmc_util.h)
   #endif
 
   /**
@@ -2401,12 +2402,12 @@
 
   #if EITHER(SENSORLESS_HOMING, SENSORLESS_PROBING)
     // TMC2209: 0...255. TMC2130: -64...63
-    #define X_STALL_SENSITIVITY  8
-    #define X2_STALL_SENSITIVITY X_STALL_SENSITIVITY
-    #define Y_STALL_SENSITIVITY  8
-    #define Y2_STALL_SENSITIVITY Y_STALL_SENSITIVITY
-    //#define Z_STALL_SENSITIVITY  8
-    //#define Z2_STALL_SENSITIVITY Z_STALL_SENSITIVITY
+  //  #define X_STALL_SENSITIVITY  8
+  //  #define X2_STALL_SENSITIVITY X_STALL_SENSITIVITY
+   // #define Y_STALL_SENSITIVITY  8
+   // #define Y2_STALL_SENSITIVITY Y_STALL_SENSITIVITY
+   // #define Z_STALL_SENSITIVITY  8
+    //#define Z2_STALL_SENSITIVITY 8
     //#define Z3_STALL_SENSITIVITY Z_STALL_SENSITIVITY
     //#define Z4_STALL_SENSITIVITY Z_STALL_SENSITIVITY
     //#define SPI_ENDSTOPS              // TMC2130 only
@@ -2448,7 +2449,9 @@
    *   stepperY.intpol(0); \
    * }
    */
-  #define TMC_ADV() {  }
+   #define TMC_ADV() {  }
+
+
 
 #endif // HAS_TRINAMIC_CONFIG
 
