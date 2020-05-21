@@ -42,14 +42,14 @@
 // EEPROM
 //
 #if NO_EEPROM_SELECTED
-  #define SDCARD_EEPROM_EMULATION
- /*
+ // #define SDCARD_EEPROM_EMULATION
+
   // from https://github.com/le3tspeak/Marlin-2.0.X-Sapphire-PRO/blob/5fb9081cc0ae912262bee453f126c1e19b92d379/Marlin/src/pins/stm32/pins_MKS_ROBIN_NANO.h#L45
   #define SPI_FLASH_EEPROM_EMULATION       // Deactivate if EEPROM is to be saved on the SD card, SPI_FLASH_EEPROM_EMULATION must then be //...
   #define SPI_FLASH_EEPROM_OFFSET 0x700000
   #define SPI_FLASH_DEVICE 2
   #define SPI_FLASH_CS_PIN PB12
-  */
+  
 #endif
 
 //
