@@ -1,5 +1,7 @@
 # Marlin for Sapphire Pro
 
+# Don't use this version, it's stuttering while printing circles
+
 ## With 4 x TMC2209 (UART), auto off heat sink fan and optical endstop on Z axis
 
 * Uses the most recent bugfixes and features of Marlin (branch bugfix-2.0.x) - use at your own risk
