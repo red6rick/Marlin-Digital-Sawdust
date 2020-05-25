@@ -762,7 +762,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 10, 65 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 60 }
 
 #define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -818,7 +818,8 @@
   #endif
 #endif
 
-#define DEFAULT_EJERK    4.0  // May be used by Linear Advance
+#define DEFAULT_EJERK    3.0  // May be used by Linear Advance
+//#define DEFAULT_EJERK    4.0  // May be used by Linear Advance
 
 /**
  * Junction Deviation Factor
@@ -828,8 +829,6 @@
  *   http://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
  */
 #if DISABLED(CLASSIC_JERK)
-//  #define JUNCTION_DEVIATION_MM 0.06 // (mm) Distance from real junction edge
-//  #define JUNCTION_DEVIATION_MM 0.1 // (mm) Distance from real junction edge
   #define JUNCTION_DEVIATION_MM 0.05 // (mm) Distance from real junction edge
 #endif
 
