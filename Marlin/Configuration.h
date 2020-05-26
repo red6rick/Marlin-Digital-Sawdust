@@ -503,9 +503,18 @@
   //#define DEFAULT_Kd 440
 
 // E3D V6 230°C with fan 17% and sock 
-#define DEFAULT_Kp 16.30
-#define DEFAULT_Ki 0.90
-#define DEFAULT_Kd 73.49
+//#define DEFAULT_Kp 16.30
+//#define DEFAULT_Ki 0.90
+//#define DEFAULT_Kd 73.49
+
+// E3D V6 50W 240°C with fan 0% and sock 
+// M303 E0 S240 C8
+//M301 P7.65 I0.37 D39.40 
+
+#define DEFAULT_Kp 7.65
+#define DEFAULT_Ki 0.37
+#define DEFAULT_Kd 39.40
+
 #endif // PIDTEMP
 
 //===========================================================================
