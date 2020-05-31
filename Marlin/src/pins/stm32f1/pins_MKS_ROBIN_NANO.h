@@ -135,6 +135,19 @@
 // UART
 #if HAS_TMC_UART
 
+    #define X_SERIAL_TX_PIN                   PE5 // TC-MAX31855  CS pin 
+    #define X_SERIAL_RX_PIN                   X_SERIAL_TX_PIN
+
+    #define Y_SERIAL_TX_PIN                   X_SERIAL_TX_PIN
+    #define Y_SERIAL_RX_PIN                   X_SERIAL_TX_PIN
+
+    #define Z_SERIAL_TX_PIN                   X_SERIAL_TX_PIN
+    #define Z_SERIAL_RX_PIN                   X_SERIAL_TX_PIN
+
+    #define E0_SERIAL_TX_PIN                  PA6 // stepper 5 STEP pin 
+    #define E0_SERIAL_RX_PIN                  E0_SERIAL_TX_PIN
+
+/*
   #define X_SERIAL_TX_PIN PA3 //stepper 5 EN pin 
   #define Y_SERIAL_TX_PIN PA1 // stepper 5 DIR pin 
   #define Z_SERIAL_TX_PIN PE5 // TC-MAX31855  CS pin 
@@ -144,12 +157,25 @@
   #define Y_SERIAL_RX_PIN Y_SERIAL_TX_PIN
   #define Z_SERIAL_RX_PIN Z_SERIAL_TX_PIN
   #define E0_SERIAL_RX_PIN E0_SERIAL_TX_PIN
+*/
 
   // Reduce baud rate for software serial reliability
   //#if HAS_TMC_SW_SERIAL
   #define TMC_BAUD_RATE 19200
   //#endif
 
+#endif
+
+// from https://github.com/le3tspeak/Marlin-2.0.X-MKS-Robin-Nano/blob/ccab494060aa552243e8323c15aee0bae4f61a14/Marlin/src/pins/stm32f1/pins_MKS_ROBIN_NANO.h#L268
+//
+// WIFI ESP8266 
+//
+
+#if ANY (WIFISUPPORT, ESP3D_WIFISUPPORT)
+  #define WIFI_TX_PIN    PA10
+  #define WIFI_RX_PIN    PA9
+  #define WIFI_IO0_PIN   PC13
+  #define WIFI_IO1_PIN   PC7
 #endif
 
 /**
