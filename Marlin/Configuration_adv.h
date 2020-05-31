@@ -3072,13 +3072,30 @@
 /**
  * User-defined menu items that execute custom GCode
  */
-//#define CUSTOM_USER_MENUS
+#define CUSTOM_USER_MENUS
 #if ENABLED(CUSTOM_USER_MENUS)
   //#define CUSTOM_USER_MENU_TITLE "Custom Commands"
   #define USER_SCRIPT_DONE "M117 User Script Done"
   #define USER_SCRIPT_AUDIBLE_FEEDBACK
   //#define USER_SCRIPT_RETURN  // Return to status screen after a script
 
+  #define USER_DESC_1 "Heaters off"
+  #define USER_GCODE_1 "M104 S0\nM140 S0"
+  
+  #define USER_DESC_2 "Fan On"
+  #define USER_GCODE_2 "M106 S255"
+
+  #define USER_DESC_3 "Fan Off"
+  #define USER_GCODE_3 "M107"
+
+  #define USER_DESC_4 "Preheat for " PREHEAT_1_LABEL
+  #define USER_GCODE_4 "M140 S" STRINGIFY(PREHEAT_1_TEMP_BED) "\nM104 S" STRINGIFY(PREHEAT_1_TEMP_HOTEND)
+
+  #define USER_DESC_5 "Preheat for " PREHEAT_2_LABEL
+  #define USER_GCODE_5 "M140 S" STRINGIFY(PREHEAT_2_TEMP_BED) "\nM104 S" STRINGIFY(PREHEAT_2_TEMP_HOTEND)
+
+
+/*
   #define USER_DESC_1 "Home & UBL Info"
   #define USER_GCODE_1 "G28\nG29 W"
 
@@ -3093,6 +3110,7 @@
 
   #define USER_DESC_5 "Home & Info"
   #define USER_GCODE_5 "G28\nM503"
+  */
 #endif
 
 /**
