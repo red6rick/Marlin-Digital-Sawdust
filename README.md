@@ -35,7 +35,8 @@ __Not for production use. Use with caution!__
 Most parts of the changes were copied from https://github.com/porlock/SapphireProMarlin2.0stable
 
 ## Sapphire Pro modifications
-* 4 x TMC2209 with UART wires to stepper E1 pins and thermocouples pin
+* X Y Z steppers RX/TX go to PE5 (thermocouple) pin
+* E stepper RX/TX goes to PA6 (stepper 5 STEP) pin
 * Hotend heat sink fan on HE1 connector (turns off below 50°C)
 * Optical endstop on Z axis
 * E3D V6 hotend with sock
