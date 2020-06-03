@@ -135,7 +135,7 @@
 // UART
 #if HAS_TMC_UART
 
-    #define X_SERIAL_TX_PIN                   PA2 // PW_DET pin
+    #define X_SERIAL_TX_PIN                   PE5 // TC-MAX31855  CS pin 
     #define X_SERIAL_RX_PIN                   X_SERIAL_TX_PIN
 
     #define Y_SERIAL_TX_PIN                   X_SERIAL_TX_PIN
@@ -144,7 +144,7 @@
     #define Z_SERIAL_TX_PIN                   X_SERIAL_TX_PIN
     #define Z_SERIAL_RX_PIN                   X_SERIAL_TX_PIN
 
-    #define E0_SERIAL_TX_PIN                  PA6 // stepper 5 STEP pin 
+    #define E0_SERIAL_TX_PIN                  PA2 // PW_DET pin
     #define E0_SERIAL_RX_PIN                  E0_SERIAL_TX_PIN
 
 /*
