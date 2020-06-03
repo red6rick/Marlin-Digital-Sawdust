@@ -144,7 +144,7 @@
     #define Z_SERIAL_TX_PIN                   X_SERIAL_TX_PIN
     #define Z_SERIAL_RX_PIN                   X_SERIAL_TX_PIN
 
-    #define E0_SERIAL_TX_PIN                  PA2 // PW_DET pin
+    #define E0_SERIAL_TX_PIN                  PA5 // wifi PA5 pin
     #define E0_SERIAL_RX_PIN                  E0_SERIAL_TX_PIN
 
 /*

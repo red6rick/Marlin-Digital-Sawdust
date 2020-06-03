@@ -2383,7 +2383,7 @@
     #define CURRENT_STEP_DOWN     50  // [mA]
     #define REPORT_CURRENT_CHANGE
     #define STOP_ON_ERROR
-    //#define MONITOR_DRIVER_STATUS_INTERVAL_MS 5000u // default: 500u (tmc_util.h)
+    #define MONITOR_DRIVER_STATUS_INTERVAL_MS 2000u // default: 500u (tmc_util.h)
   #endif
 
   /**
