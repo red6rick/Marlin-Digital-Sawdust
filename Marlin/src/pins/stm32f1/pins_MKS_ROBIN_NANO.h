@@ -135,7 +135,7 @@
 // UART
 #if HAS_TMC_UART
 
-    #define X_SERIAL_TX_PIN                   PE5 // TC-MAX31855  CS pin 
+    #define X_SERIAL_TX_PIN                   PA2 // PW_DET pin
     #define X_SERIAL_RX_PIN                   X_SERIAL_TX_PIN
 
     #define Y_SERIAL_TX_PIN                   X_SERIAL_TX_PIN
