@@ -126,6 +126,7 @@
 
 #define SDIO_SUPPORT
 #define SD_DETECT_PIN                       PD12
+#define SDIO_CLOCK                           8000000       /* 8 MHz */
 
 //
 // LCD / Controller
@@ -183,6 +184,16 @@
  * If the screen stays white, disable 'LCD_RESET_PIN'
  * to let the bootloader init the screen.
  */
+
+#if ENABLED(SAPPHIRE_GRAPHICAL_TFT)
+
+  #define LCD_FULL_PIXEL_WIDTH  480
+  #define LCD_PIXEL_OFFSET_X    48
+  #define LCD_FULL_PIXEL_HEIGHT 320
+  #define LCD_PIXEL_OFFSET_Y    32
+
+#endif
+
 #if ENABLED(FSMC_GRAPHICAL_TFT) || ENABLED(SAPPHIRE_GRAPHICAL_TFT)
   #define DOGLCD_MOSI -1 // prevent redefine Conditionals_post.h
   #define DOGLCD_SCK -1
