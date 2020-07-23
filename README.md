@@ -4,7 +4,7 @@
 
 * Uses the most recent bugfixes and features of Marlin (branch bugfix-2.0.x) - use at your own risk
 * Linear Advance is enabled but K value is set to 0 (= optional, set it via gcode M900)
-* Connector for the second hotend is used as fan output for the heatsink fan on the hotend. Turns off below 50°C
+* Connector for the second hotend is used as fan output for the heatsink fan on the hotend. Turns off below 50ï¿½C
 * Expects an optical endstop on the Z axis (Z min endstop)
 * Filament runout sensor is enabled
 * Abort print when endstop is hit (optional via gcode)
@@ -31,7 +31,7 @@ __Not for production use. Use with caution!__
 ## Sapphire Pro modifications
 * X Y Z steppers RX/TX go to PE5 (thermocouple) pin
 * E stepper RX/TX goes to PA6 (stepper 5 STEP) pin
-* Hotend heat sink fan on HE1 connector (turns off below 50°C)
+* Hotend heat sink fan on HE1 connector (turns off below 50ï¿½C)
 * Optical endstop on Z axis
 * E3D V6 hotend with sock
 
