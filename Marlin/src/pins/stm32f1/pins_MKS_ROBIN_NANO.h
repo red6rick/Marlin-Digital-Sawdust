@@ -253,7 +253,7 @@
     #define TOUCH_MOSI_PIN                  PB15  // SPI2_MOSI
   #endif
 #endif
-
+/* 
 #if HAS_SPI_LCD
 
   #define BEEPER_PIN                        PC5
@@ -299,7 +299,7 @@
   #endif // !MKS_MINI_12864
 
 #endif // HAS_SPI_LCD
-
+ */
 #define SPI_FLASH
 #if ENABLED(SPI_FLASH)
   #define W25QXX_CS_PIN                     PB12
