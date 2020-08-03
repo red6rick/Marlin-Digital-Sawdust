@@ -186,7 +186,7 @@
  * to let the bootloader init the screen.
  */
 
-if ENABLED(TFT_LVGL_UI_FSMC)
+#if ENABLED(TFT_LVGL_UI_FSMC)
 
   #define FSMC_CS_PIN                       PD7   // NE4
   #define FSMC_RS_PIN                       PD11  // A0
