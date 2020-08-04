@@ -26,7 +26,6 @@ __Not for production use. Use with caution!__
 * pins_MKS_ROBIN_NANO.h
 * Configuration.h
 * Configuration_adv.h
-* Marlin/src/lcd/dogm/u8g_dev_tft_320x240_upscale_from_128x64.cpp
 
 ## Sapphire Pro modifications
 * X Y Z steppers RX/TX go to PE5 (thermocouple) pin
