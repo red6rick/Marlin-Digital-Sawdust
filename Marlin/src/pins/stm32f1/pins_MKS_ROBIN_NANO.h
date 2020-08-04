@@ -80,11 +80,11 @@
 #define E0_ENABLE_PIN                       PB3
 #define E0_STEP_PIN                         PD6
 #define E0_DIR_PIN                          PD3
-
-//#define E1_ENABLE_PIN                       PA3
-//#define E1_STEP_PIN                         PA6
-//#define E1_DIR_PIN                          PA1
-
+/* 
+#define E1_ENABLE_PIN                       PA3
+#define E1_STEP_PIN                         PA6
+#define E1_DIR_PIN                          PA1
+ */
 //
 // Temperature Sensors
 //
@@ -102,10 +102,10 @@
   #ifndef FAN1_PIN
     #define FAN1_PIN                        PB0
   #endif
-//#else
-//  #ifndef HEATER_1_PIN
-//    #define HEATER_1_PIN                    PB0
-//  #endif
+/* #else
+  #ifndef HEATER_1_PIN
+    #define HEATER_1_PIN                    PB0
+  #endif */
 #endif
 #ifndef FAN_PIN
   #define FAN_PIN                           PB1   // FAN
@@ -150,7 +150,7 @@
 #endif
 
 #define SDIO_SUPPORT
-#define SDIO_CLOCK 8000000                        // 8 MHz
+#define SDIO_CLOCK 8000000                        // 4.5 MHz
 #define SD_DETECT_PIN                       PD12
 #define ONBOARD_SD_CS_PIN                   PC11
 
@@ -199,21 +199,32 @@
   #define LCD_BACKLIGHT_PIN                 PD13
 
 #elif ENABLED(FSMC_GRAPHICAL_TFT)
-  #define DOGLCD_MOSI                     -1    // prevent redefine Conditionals_post.h
-  #define DOGLCD_SCK                      -1
 
-  #define FSMC_UPSCALE 3
-  #define LCD_FULL_PIXEL_WIDTH  480
-  #define LCD_PIXEL_OFFSET_X    48
-  #define LCD_FULL_PIXEL_HEIGHT 320
-  #define LCD_PIXEL_OFFSET_Y    32
+  #define DOGLCD_MOSI                       -1    // prevent redefine Conditionals_post.h
+  #define DOGLCD_SCK                        -1
+
+  #ifndef FSMC_UPSCALE
+    #define FSMC_UPSCALE                    3
+  #endif
+  #ifndef LCD_FULL_PIXEL_WIDTH
+    #define LCD_FULL_PIXEL_WIDTH            480
+  #endif
+  #ifndef LCD_PIXEL_OFFSET_X
+    #define LCD_PIXEL_OFFSET_X              48
+  #endif
+  #ifndef LCD_FULL_PIXEL_HEIGHT
+    #define LCD_FULL_PIXEL_HEIGHT           320
+  #endif
+  #ifndef LCD_PIXEL_OFFSET_Y
+    #define LCD_PIXEL_OFFSET_Y              32
+  #endif
 
   #define FSMC_CS_PIN                       PD7   // NE4
   #define FSMC_RS_PIN                       PD11  // A0
 
-  #define LCD_USE_DMA_FSMC
-  #define FSMC_DMA_DEV DMA2
-  #define FSMC_DMA_CHANNEL DMA_CH5
+  #define LCD_USE_DMA_FSMC                  // Use DMA transfers to send data to the TFT
+  #define FSMC_DMA_DEV                      DMA2
+  #define FSMC_DMA_CHANNEL                  DMA_CH5
 
   #define LCD_RESET_PIN                     PC6   // FSMC_RST
   #define LCD_BACKLIGHT_PIN                 PD13
@@ -224,6 +235,7 @@
     #define TOUCH_MISO_PIN                  PB14  // SPI2_MISO
     #define TOUCH_MOSI_PIN                  PB15  // SPI2_MOSI
   #endif
+
 #endif
 
 #define SPI_FLASH
