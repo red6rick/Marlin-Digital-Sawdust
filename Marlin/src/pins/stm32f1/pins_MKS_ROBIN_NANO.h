@@ -224,6 +224,7 @@
     #define TOUCH_MISO_PIN                  PB14  // SPI2_MISO
     #define TOUCH_MOSI_PIN                  PB15  // SPI2_MOSI
   #endif
+#endif
 
 #define SPI_FLASH
 #if ENABLED(SPI_FLASH)
