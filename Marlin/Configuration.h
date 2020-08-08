@@ -2203,7 +2203,7 @@
 //
 //#define TFT_320x240
 //#define TFT_320x240_SPI
-//#define TFT_480x320
+#define TFT_480x320
 //#define TFT_480x320_SPI
 
 //
@@ -2223,7 +2223,7 @@
 // FSMC display (MKS Robin, Alfawise U20, JGAurora A5S, REXYZ A1, etc.)
 // Upscaled 128x64 Marlin UI
 //
-#define FSMC_GRAPHICAL_TFT
+//#define FSMC_GRAPHICAL_TFT
 
 //
 // TFT LVGL UI
@@ -2254,10 +2254,10 @@
 
   #define TOUCH_SCREEN_CALIBRATION
 
-  #define XPT2046_X_CALIBRATION   12013
-  #define XPT2046_X_OFFSET        -32
-  #define XPT2046_Y_CALIBRATION   -8711
-  #define XPT2046_Y_OFFSET        256
+//  #define XPT2046_X_CALIBRATION   12013
+//  #define XPT2046_X_OFFSET        -32
+//  #define XPT2046_Y_CALIBRATION   -8711
+//  #define XPT2046_Y_OFFSET        256
 #endif
 
 //
