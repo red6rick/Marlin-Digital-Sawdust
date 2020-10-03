@@ -17,10 +17,6 @@ https://www.thingiverse.com/thing:4344191
 
 If you came here searching for a Marlin version for unmodified Sapphire Pros, prepared for UART. you may want to look at this repository: https://github.com/le3tspeak/Marlin-2.0.X-Sapphire-PRO
 
-## Marlin 2.0 Bugfix Branch
-
-__Not for production use. Use with caution!__
-
 ## Files adapted to Sapphire Pro with TMC2209 (UART)
 
 * pins_MKS_ROBIN_NANO.h
