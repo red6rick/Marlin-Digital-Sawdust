@@ -175,15 +175,20 @@
     #define Z_SERIAL_TX_PIN                   X_SERIAL_TX_PIN
     #define Z_SERIAL_RX_PIN                   X_SERIAL_TX_PIN
 
-    #define E0_SERIAL_TX_PIN                  X_SERIAL_TX_PIN
-//    #define E0_SERIAL_TX_PIN                  PA5 // wifi PA5 pin
+//    #define E0_SERIAL_TX_PIN                  X_SERIAL_TX_PIN
+    #define E0_SERIAL_TX_PIN                  PA10 // wifi PA5 pin
     #define E0_SERIAL_RX_PIN                  E0_SERIAL_TX_PIN
 
-    #define E1_SERIAL_TX_PIN                  PA10
+    #define E1_SERIAL_TX_PIN                  X_SERIAL_TX_PIN
     #define E1_SERIAL_RX_PIN                  E1_SERIAL_TX_PIN
-    #define Z2_SERIAL_TX_PIN                  PA10
+    #define Z2_SERIAL_TX_PIN                  E1_SERIAL_TX_PIN
     #define Z2_SERIAL_RX_PIN                  E1_SERIAL_TX_PIN
 
+//    #define E1_SERIAL_TX_PIN                  PA10
+//    #define E1_SERIAL_RX_PIN                  E1_SERIAL_TX_PIN
+//    #define Z2_SERIAL_TX_PIN                  PA10
+//    #define Z2_SERIAL_RX_PIN                  E1_SERIAL_TX_PIN
+//
 
 
   // Reduce baud rate for software serial reliability
