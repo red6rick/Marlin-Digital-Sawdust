@@ -2470,11 +2470,11 @@
   //              <- board power M1 M2 M3 -> endstops
 
   #define  X_SLAVE_ADDRESS 0 // :  :  :
-  #define  Y_SLAVE_ADDRESS 1 // |  :  :
-  #define  Z_SLAVE_ADDRESS 2 // :  |  :
+  #define  Y_SLAVE_ADDRESS 0 // |  :  :
+  #define  Z_SLAVE_ADDRESS 0 // :  |  :
   #define X2_SLAVE_ADDRESS 0
   #define Y2_SLAVE_ADDRESS 0
-  #define Z2_SLAVE_ADDRESS 3 // |  |  :
+  #define Z2_SLAVE_ADDRESS 0 // |  |  :
   #define Z3_SLAVE_ADDRESS 0
   #define Z4_SLAVE_ADDRESS 0
   #define E0_SLAVE_ADDRESS 0 // :  :  :
