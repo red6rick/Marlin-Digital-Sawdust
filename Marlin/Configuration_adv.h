@@ -3304,17 +3304,16 @@
   #define USER_DESC_1 "Heaters off"
   #define USER_GCODE_1 "M104 S0\nM140 S0"
   
-  #define USER_DESC_2 "Fan On"
-  #define USER_GCODE_2 "M106 S255"
+  #define USER_DESC_2 "Syncronize Z Steppers"
+  #define USER_GCODE_2 "G34"
 
-  #define USER_DESC_3 "Fan Off"
-  #define USER_GCODE_3 "M107"
+  #define USER_DESC_3 "Force Z -10"
+  #define USER_GCODE_3 "M211 S0\nG91\nG0 F200 Z-11\nG0 Z1\nG92 Z0\nG90\nM211 S1"
 
-  #define USER_DESC_4 "Preheat for " PREHEAT_1_LABEL
-  #define USER_GCODE_4 "M140 S" STRINGIFY(PREHEAT_1_TEMP_BED) "\nM104 S" STRINGIFY(PREHEAT_1_TEMP_HOTEND)
+  #define USER_DESC_4 "Force Z -1"
+  #define USER_GCODE_4 "M211 S0\nG91\nG0 F50 Z-1.1\nG0 Z0.1\nG92 Z0\nG90\nM211 S1"
 
-  #define USER_DESC_5 "Preheat for " PREHEAT_2_LABEL
-  #define USER_GCODE_5 "M140 S" STRINGIFY(PREHEAT_2_TEMP_BED) "\nM104 S" STRINGIFY(PREHEAT_2_TEMP_HOTEND)
+
 
 
 /*
